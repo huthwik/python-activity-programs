@@ -1,4 +1,4 @@
-##Problem Statement##
+## Problem Statement
 Design a progressive electricity billing system that calculates monthly household bills based on tiered consumption slabs, fixed charges, surcharges for high bills, and rebates for low consumption. The system must process consumption data across consecutive months, compute the exact bill for each, and identify and flag any month where the bill increases by more than 50% compared to the preceding month, indicating an unusual consumption spike.
 
 **Algorithm**
