@@ -1,4 +1,4 @@
-**Problem Statement**
+## Problem Statement
 Design a software system to evaluate and rank university scholarship applicants. The system must filter out candidates who do not meet baseline thresholds for aggregate marks (80%), individual subject scores (minimum 70% in each subject), attendance (85%), and annual family income (maximum $50,000). Eligible students are then ranked primarily by aggregate marks in descending order. Any ties are resolved systematically by checking highest attendance, followed by lowest income, and finally alphabetical order of the applicant's name.
 
 **Algorithm**
