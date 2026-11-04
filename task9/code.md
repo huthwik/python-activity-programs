@@ -35,58 +35,7 @@ graph TD
 
 ```
 
-**Python Source Code**
 
-```python
-def analyze_profitability(data):
-    material_cost = data['units'] * data['material_rate']
-    labor_cost = data['labor_hours'] * data['labor_rate']
-    machine_cost = data['machine_hours'] * data['machine_rate']
-    
-    total_cost = material_cost + labor_cost + machine_cost + data['wastage_cost']
-    total_revenue = data['units'] * data['selling_price']
-    
-    profit = total_revenue - total_cost
-    
-    if total_cost > 0:
-        profit_margin = (profit / total_cost) * 100
-    else:
-        profit_margin = 0.0
-        
-    target_met = profit_margin >= data['target_margin']
-    
-    return {
-        "total_cost": round(total_cost, 2),
-        "total_revenue": round(total_revenue, 2),
-        "profit": round(profit, 2),
-        "profit_margin": round(profit_margin, 2),
-        "target_met": target_met
-    }
-
-production_data = {
-    "units": 1000,
-    "material_rate": 15.0,
-    "labor_hours": 200,
-    "labor_rate": 25.0,
-    "machine_hours": 50,
-    "machine_rate": 100.0,
-    "wastage_cost": 500.0,
-    "selling_price": 35.0,
-    "target_margin": 30.0
-}
-
-result = analyze_profitability(production_data)
-
-print(f"Total Production Cost: ${result['total_cost']}")
-print(f"Total Revenue: ${result['total_revenue']}")
-print(f"Net Profit: ${result['profit']}")
-print(f"Profit Margin: {result['profit_margin']}%")
-if result['target_met']:
-    print("Status: Profit target achieved.")
-else:
-    print("Status: Profit target not achieved.")
-
-```
 
 **Sample Input**
 
