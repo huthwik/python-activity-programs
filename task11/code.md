@@ -1,4 +1,4 @@
-**Problem Statement**
+## Problem Statement
 Design a system to process student marks across multiple subjects by applying a minimum pass mark criterion and a predefined grace-mark policy. The system must evaluate failing marks, apply grace marks if the deficit is within the per-subject and overall allowed limits, ensure maximum marks are not exceeded, and output the finalized marks, total score, percentage, and academic classification.
 
 **Algorithm**
